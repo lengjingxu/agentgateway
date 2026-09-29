@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-28T08:46:22Z"
+    "generatedAt": "2026-09-29T08:38:36Z"
   },
   "providers": {
     "anthropic": {
@@ -162,6 +162,17 @@
           ]
         },
         "claude-sonnet-5": {
+          "rates": {
+            "input": "2",
+            "output": "10",
+            "cacheRead": "0.2",
+            "cacheWrite": "2.5"
+          },
+          "tags": [
+            "adaptive_thinking"
+          ]
+        },
+        "claude-sonnet-5-5": {
           "rates": {
             "input": "2",
             "output": "10",
@@ -1066,6 +1077,17 @@
             "anthropic_messages",
             "mantle",
             "runtime"
+          ]
+        },
+        "global.anthropic.claude-sonnet-5-5": {
+          "rates": {
+            "input": "2",
+            "output": "10",
+            "cacheRead": "0.2",
+            "cacheWrite": "2.5"
+          },
+          "tags": [
+            "adaptive_thinking"
           ]
         },
         "global.moonshotai.kimi-k3": {
@@ -2676,6 +2698,11 @@
             "runtime"
           ]
         },
+        "xai.grok-4.7": {
+          "tags": [
+            "runtime"
+          ]
+        },
         "zai.glm-4.7": {
           "rates": {
             "input": "0.6",
@@ -2881,6 +2908,17 @@
           ]
         },
         "claude-sonnet-5": {
+          "rates": {
+            "input": "2",
+            "output": "10",
+            "cacheRead": "0.2",
+            "cacheWrite": "2.5"
+          },
+          "tags": [
+            "adaptive_thinking"
+          ]
+        },
+        "claude-sonnet-5-5": {
           "rates": {
             "input": "2",
             "output": "10",
@@ -3725,6 +3763,17 @@
             "adaptive_thinking"
           ]
         },
+        "claude-sonnet-5.5": {
+          "rates": {
+            "input": "2",
+            "output": "10",
+            "cacheRead": "0.2",
+            "cacheWrite": "2.5"
+          },
+          "tags": [
+            "adaptive_thinking"
+          ]
+        },
         "gemini-3.5-flash": {
           "rates": {
             "input": "1.5",
@@ -4249,7 +4298,7 @@
           "rates": {
             "input": "0.14",
             "output": "0.28",
-            "cacheRead": "0.0027"
+            "cacheRead": "0.0028"
           }
         },
         "XiaomiMiMo/MiMo-V2.6-Pro": {
@@ -5147,6 +5196,17 @@
             "adaptive_thinking"
           ]
         },
+        "claude-sonnet-5-5@default": {
+          "rates": {
+            "input": "2",
+            "output": "10",
+            "cacheRead": "0.2",
+            "cacheWrite": "2.5"
+          },
+          "tags": [
+            "adaptive_thinking"
+          ]
+        },
         "claude-sonnet-5@default": {
           "rates": {
             "input": "2",
@@ -5976,19 +6036,14 @@
         "codestral-latest": {
           "rates": {
             "input": "0.3",
-            "output": "0.9"
+            "output": "0.9",
+            "cacheRead": "0.03"
           }
         },
         "magistral-medium-latest": {
           "rates": {
             "input": "2",
             "output": "5"
-          }
-        },
-        "magistral-small": {
-          "rates": {
-            "input": "0.5",
-            "output": "1.5"
           }
         },
         "ministral-3b-latest": {
@@ -6018,13 +6073,15 @@
         "mistral-large-2512": {
           "rates": {
             "input": "0.5",
-            "output": "1.5"
+            "output": "1.5",
+            "cacheRead": "0.05"
           }
         },
         "mistral-large-latest": {
           "rates": {
             "input": "0.5",
-            "output": "1.5"
+            "output": "1.5",
+            "cacheRead": "0.05"
           }
         },
         "mistral-medium-2505": {
@@ -6042,13 +6099,15 @@
         "mistral-medium-2604": {
           "rates": {
             "input": "1.5",
-            "output": "7.5"
+            "output": "7.5",
+            "cacheRead": "0.15"
           }
         },
         "mistral-medium-latest": {
           "rates": {
             "input": "1.5",
-            "output": "7.5"
+            "output": "7.5",
+            "cacheRead": "0.15"
           }
         },
         "mistral-nemo": {
@@ -6066,13 +6125,15 @@
         "mistral-small-2603": {
           "rates": {
             "input": "0.15",
-            "output": "0.6"
+            "output": "0.6",
+            "cacheRead": "0.015"
           }
         },
         "mistral-small-latest": {
           "rates": {
             "input": "0.15",
-            "output": "0.6"
+            "output": "0.6",
+            "cacheRead": "0.015"
           }
         },
         "open-mistral-7b": {
@@ -6622,20 +6683,6 @@
           "rates": {
             "input": "0.14",
             "output": "0.14"
-          }
-        },
-        "moonshotai/Kimi-K2.6": {
-          "rates": {
-            "input": "1.2",
-            "output": "4.5",
-            "cacheRead": "0.2"
-          }
-        },
-        "moonshotai/Kimi-K2.7-Code": {
-          "rates": {
-            "input": "0.95",
-            "output": "4",
-            "cacheRead": "0.19"
           }
         },
         "moonshotai/Kimi-K3": {
